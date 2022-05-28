@@ -1,10 +1,9 @@
 import Head from "next/head";
-import Navigation from "./Navigation";
+import React from "react";
+import { twMerge } from "tailwind-merge";
+import Navbar from "./Navbar";
 
-type Props = {
-  children: React.ReactNode;
-};
-export default function Layout({ children }: Props) {
+const Layout: React.FC<{ className?: string }> = ({ children, className }) => {
   return (
     <div className="root">
       <Head>
@@ -15,32 +14,15 @@ export default function Layout({ children }: Props) {
         <meta name="theme-color" content="#fff" />
       </Head>
       <nav>
-        <Navigation />
+        <Navbar />
       </nav>
-      <main>{children}</main>
-      <style jsx>
-        {`
-          .root {
-            display: block;
-            padding: 4rem 0;
-            box-sizing: border-box;
-            height: 100%;
-          }
-          main {
-            display: flex;
-            min-height: 100%;
-          }
-          @media (min-width: 769px) {
-            .root {
-              display: flex;
-              flex: 1 0 auto;
-            }
-            main {
-              flex: 1 0 auto;
-            }
-          }
-        `}
-      </style>
+      <main>
+        <div className={twMerge("container mx-auto px-4 mb-4 " + className)}>
+          {children}
+        </div>
+      </main>
     </div>
   );
-}
+};
+
+export default Layout;

@@ -1,8 +1,8 @@
 import Link from "next/link";
-import { TagContent } from "../lib/tags";
+import { TagType } from "../lib/tagsRepo";
 
 type Props = {
-  tag: TagContent;
+  tag: TagType;
 };
 export default function Tag({ tag }: Props) {
   return (
