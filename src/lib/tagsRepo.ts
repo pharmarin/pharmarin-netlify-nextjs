@@ -7,8 +7,10 @@ export type TagType = {
 
 const tagsRepo = taxonomiesRepo<TagType>("tags");
 
-export default {
+const tagsRepoExport = {
   getAllTags: tagsRepo.getList,
   getTagFromSlug: tagsRepo.getOne,
   getTagsFromSlugs: tagsRepo.getAll,
 };
+
+export default tagsRepoExport;

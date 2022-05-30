@@ -105,7 +105,9 @@ export function listPostContent(
   return limit ? posts.slice((page - 1) * limit, page * limit) : posts;
 }
 
-export default {
+const postsRepo = {
   getPosts,
   getPost,
 };
+
+export default postsRepo;

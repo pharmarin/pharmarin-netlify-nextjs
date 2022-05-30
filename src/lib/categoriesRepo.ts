@@ -7,7 +7,9 @@ export type CategoryType = {
 
 const tagsRepo = taxonomiesRepo<CategoryType>("categories");
 
-export default {
+const categoriesRepo = {
   getAllCategories: tagsRepo.getList,
   getCategoriesFromSlugs: tagsRepo.getAll,
 };
+
+export default categoriesRepo;

@@ -3,6 +3,7 @@ import SingleTitle from "components/SingleTitle";
 import TagList from "components/TagList";
 import { CategoryType } from "lib/categoriesRepo";
 import { TagType } from "lib/tagsRepo";
+import Image from "next/image";
 import React from "react";
 import Layout from "./Layout";
 import BasicMeta from "./meta/BasicMeta";
@@ -28,7 +29,7 @@ const PostLayout: React.FC<{
           <div className="flex flex-row sm:space-x-8">
             {featuredImage && (
               <div className="flex-none hidden sm:flex max-w-[30%]">
-                <img
+                <Image
                   alt={title}
                   className="max-h-40 w-full object-cover rounded"
                   src={featuredImage}
