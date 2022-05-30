@@ -1,0 +1,44 @@
+{
+  "categories": [
+    {
+      "name": "Fiches patient",
+      "slug": "fiches-patient"
+    },
+    {
+      "name": "Formations alimentation",
+      "slug": "formations-alimentation"
+    },
+    {
+      "name": "Formations homéopathie",
+      "slug": "formations-homeopathie"
+    },
+    {
+      "name": "Formations laboratoire",
+      "slug": "formations-laboratoire"
+    },
+    {
+      "name": "Formations logiciel",
+      "slug": "formations-logiciel"
+    },
+    {
+      "name": "Formations matériel",
+      "slug": "formations-materiel"
+    },
+    {
+      "name": "Formations médicaments",
+      "slug": "formations-medicaments"
+    },
+    {
+      "name": "Formations pathologie",
+      "slug": "formations-pathologie"
+    },
+    {
+      "name": "Formations phytothérapie et aromathérapie",
+      "slug": "formations-phytotherapie-et-aromatherapie"
+    },
+    {
+      "name": "Non classé",
+      "slug": "non-classe"
+    }
+  ]
+}

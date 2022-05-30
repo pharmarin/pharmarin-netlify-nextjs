@@ -48,35 +48,32 @@ collections:
     editor:
       preview: false
     files:
-      - name: "authors"
-        label: "Authors"
-        file: "meta/authors.yml"
-        description: "Author descriptions"
+      - name: "tags"
+        label: "Étiquettes"
+        file: "content/tags.json"
+        description: "Liste des étiquettes"
         fields:
-          - name: authors
-            label: Authors
-            label_singular: "Author"
+          - name: tags
+            label: Étiquettes
+            label_singular: "Étiquette"
             widget: list
             fields:
               - label: "Slug"
                 name: "slug"
                 widget: "string"
-                hint: "The part of a URL identifies the author"
-              - label: "Name"
+                hint: "The part of a URL identifies the tag"
+              - label: "Display Name"
                 name: "name"
                 widget: "string"
-                hint: "First and Last"
-              - label: "Introduction"
-                name: "introduction"
-                widget: "text"
-      - name: "tags"
-        label: "Tags"
-        file: "meta/tags.yml"
-        description: "List of tags"
+                hint: "Tag name for displaying on the site"
+      - name: "categories"
+        label: "Catégories"
+        file: "content/categories.json"
+        description: "Liste des catégories"
         fields:
           - name: tags
-            label: Tags
-            label_singular: "Tag"
+            label: Catégories
+            label_singular: "Catégorie"
             widget: list
             fields:
               - label: "Slug"
@@ -108,18 +105,18 @@ collections:
         name: "date"
         widget: "datetime"
         format: "YYYY-MM-DD"
-        dateFormat: "YYYY-MM-DD"
-        timeFormat: false
+        date_format: "YYYY-MM-DD"
+        time_format: false
       - label: Author
         name: "author"
         widget: relation
         collection: "meta"
         file: "authors"
-        searchFields:
+        search_fields:
           - "authors.*.name"
-        displayFields:
+        display_fields:
           - "authors.*.name"
-        valueField: "authors.*.slug"
+        value_field: "authors.*.slug"
       - label: Tags
         label_singular: "Tag"
         name: "tags"
@@ -131,11 +128,11 @@ collections:
           widget: relation
           collection: "meta"
           file: "tags"
-          searchFields:
+          search_fields:
             - "tags.*.name"
-          displayFields:
+          display_fields:
             - "tags.*.name"
-          valueField: "tags.*.slug"
+          value_field: "tags.*.slug"
       - label: "Body"
         name: "body"
         widget: "markdown"
