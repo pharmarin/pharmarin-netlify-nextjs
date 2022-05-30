@@ -1,0 +1,44 @@
+{
+  "tags": [
+    {
+      "name": "Alimentation",
+      "slug": "alimentation"
+    },
+    {
+      "name": "Atelier",
+      "slug": "atelier"
+    },
+    {
+      "name": "Bioderma",
+      "slug": "bioderma"
+    },
+    {
+      "name": "Colon irritable",
+      "slug": "colon-irritable"
+    },
+    {
+      "name": "Commandes",
+      "slug": "commandes"
+    },
+    {
+      "name": "Conseils associés",
+      "slug": "conseils-associes"
+    },
+    {
+      "name": "Dispositifs",
+      "slug": "dispositifs"
+    },
+    {
+      "name": "Équilibre acido-basique",
+      "slug": "equilibre-acido-basique"
+    },
+    {
+      "name": "Fiche conseil",
+      "slug": "fiche-conseil"
+    },
+    {
+      "name": "Formation comptoir",
+      "slug": "formation-comptoir"
+    }
+  ]
+}
